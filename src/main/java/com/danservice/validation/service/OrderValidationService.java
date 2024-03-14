@@ -6,10 +6,8 @@ import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Random;
 
 import static java.lang.String.format;
-import static java.lang.Thread.sleep;
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 
 @Service
@@ -17,10 +15,8 @@ public class OrderValidationService {
 
     @SneakyThrows
     public void validate(OrderValidationRequestDTO orderDTO) {
-        /*  Dummy logic: adding some delay and returning invalid
-            only if the word is contained in the instrument field */
-
-        sleep(new Random().nextInt(0, 500));
+        /*  Dummy logic: returning invalid only
+            if the word is contained in the instrument field */
 
         var instrument = orderDTO.getInstrument();
         if (instrument.contains("invalid")) {
