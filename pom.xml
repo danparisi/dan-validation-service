@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.danservice</groupId>
         <artifactId>dan-service-starter-parent</artifactId>
-        <version>0.0.35</version>
+        <version>0.0.52</version>
     </parent>
 
     <artifactId>validation</artifactId>
@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.danservice</groupId>
             <artifactId>dan-service-tech-starter</artifactId>
-            <version>0.0.65</version>
+            <version>0.0.83</version>
         </dependency>
 
         <dependency>
